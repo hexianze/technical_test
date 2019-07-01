@@ -20,12 +20,6 @@ h1 {
   text-align: center;
 }
 
-label {
-  display: inline-block;
-  padding: 0 10px;
-  vertical-align: middle;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -49,4 +43,44 @@ input:focus,
 textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
+}
+
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  display: block;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: green;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
 }
