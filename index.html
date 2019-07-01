@@ -4,8 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Responsive Registration Form</title>
     <script src="app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Enter your Info</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="" id="" />
+        <label for="email">Email:</label>
+        <input type="email" name="" id="" />
+        <label for="password">Password</label>
+        <input type="password" name="" id="" />
+      </fieldset>
+      <fieldset>
+        <legend>Your Profile</legend>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="" cols="30" rows="10"></textarea>
+        <label for="job">Job Role:</label>
+        <select name="job" id="">
+          <optgroup label="Web">
+            <option value="front-end-developer">Front-End Developer</option>
+            <option value="back-end-developer">Back-End Developer</option>
+            <option value="UI&UX Designer">UI&UX Designer</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="ios-developer">iOS Developer</option>
+            <option value="android-developer">Android Developer</option>
+            <option value="ReactNative Developer">ReactNative Developer</option>
+          </optgroup>
+        </select>
+        <label for="interest">Interests:</label>
+        <input type="checkbox" name="user_interest" value="Web Development" />
+        <label class="light" for="web_development"> Web Development</label>
+        <input
+          type="checkbox"
+          name="user_interest"
+          value="Mobile Development"
+        />
+        <label class="light" for="mobile_development">
+          Mobile Development</label
+        >
+        <input type="checkbox" name="user_interest" value="Design" />
+        <label class="light" for="design"> Design</label>
+      </fieldset>
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
 </html>
