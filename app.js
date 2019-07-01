@@ -1,19 +1,26 @@
-function fib(n) {
-  if (n <= 0) {
-    return "This is not valid fibonacci number";
-  } else if (n === 1) {
-    return [0];
-  } else if (n === 3) {
-    return [1, 1, 2];
+function fib(num) {
+  let arr = [];
+  if (num == 1) {
+    return (arr = [1]);
+  } else if (num == 2) {
+    return (arr = [1, 1]);
+  } else {
+    arr = [1, 1];
+    let a = 1;
+    let b = 1;
+    let c = 2;
+
+    for (let i = 2; i < num; i++) {
+      arr.push(c);
+      a = b;
+      b = c;
+      c = a + b;
+    }
+    let finalResult = arr.filter(item => {
+      return item < num;
+    });
+    return finalResult;
   }
-  var result = [0, 1];
-  for (var i = 2; i < n; i++) {
-    result.push(result[i - 2] + result[i - 1]);
-  }
-  result.shift();
-  var finalResult = result.filter(item => {
-    return item < n;
-  });
-  return finalResult;
 }
-console.log(fib(9));
+
+console.log(fib(8));
